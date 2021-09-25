@@ -4,8 +4,7 @@ A conference call implementation using WebRTC, Socket.io and Node.js. This demo 
 
 # Getting Started
 - Run `npm ci`
-- `cd src`
-- `node app.js`
+- `npm start`
 
 
 # Features
@@ -21,7 +20,7 @@ A conference call implementation using WebRTC, Socket.io and Node.js. This demo 
 
  
 # Demo
-You can test at https://chat.1410inc.xyz.
+You can test at https://webrtc-danmaku.herokuapp.com/.
 
 
 # Note
