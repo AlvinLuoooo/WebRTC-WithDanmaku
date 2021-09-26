@@ -135,6 +135,9 @@ window.addEventListener( 'load', () => {
 
             //add localchat
             h.addChat( data, 'local' );
+
+            //add local danmaku
+            danmaku.emit(createComment(`You: ${data.msg}`));
         }
 
 
