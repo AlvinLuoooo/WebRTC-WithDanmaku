@@ -6,7 +6,7 @@ Original repo https://github.com/amirsanni/Video-Call-App-NodeJS from amirsanni
 
 Danmaku engine repo https://github.com/weizhenye/Danmaku from weizhenye
 
-See https://github.com/CapLock-OCTO/WebRTC-withoutDanmaku for the Danmaku disabled version (Porject research purpose only)
+Switch to `nodanmaku` branch for the Danmaku disabled version (Porject research purpose only)
 
 
 # Getting Started
