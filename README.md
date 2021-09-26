@@ -1,3 +1,4 @@
+https://webrtc-node-chat.herokuapp.com/
 # Conference Call
 A conference call implementation using WebRTC, Socket.io and Node.js. This demo is ideal for not more than 4 devices. 
 Add Danmaku feature for research study use.
@@ -25,4 +26,4 @@ Original repo https://github.com/amirsanni/Video-Call-App-NodeJS from amirsanni
 
  
 # Deploy version
-Application hosted at Heroku: https://webrtc-danmaku.herokuapp.com/.
+Application hosted at Heroku: https://webrtc-node-chat.herokuapp.com/.
