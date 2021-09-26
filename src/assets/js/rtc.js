@@ -102,6 +102,9 @@ window.addEventListener( 'load', () => {
 
             socket.on( 'chat', ( data ) => {
                 h.addChat( data, 'remote' );
+                console.log(data);
+                console.log(`${data.sender}: ${data.msg}`);
+                danmaku.emit(createComment(`${data.sender}: ${data.msg}`));
             } );
         } );
 
