@@ -125,7 +125,9 @@ window.addEventListener( 'load', () => {
             let data = {
                 room: room,
                 msg: msg,
-                sender: `${username} (${randomNumber})`
+                // sender: `${username} (${randomNumber})` 
+                // Removed Random Number behind username
+                sender:`${username}`
             };
 
             //emit chat message
