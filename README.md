@@ -17,6 +17,7 @@ A conference call implementation using WebRTC, Socket.io and Node.js. This demo 
 - Expand participants' stream
 - Screen Recording
 - Video Recording
+- Danmaku Feature (New!)
 
  
 # Demo
