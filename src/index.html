@@ -150,5 +150,31 @@
                 </div>
             </div>
         </div>
+
+        <!-- Danmaku container -->
+        <div id="dm-container" style="width:100vw;height:100vh;position:fixed"></div>
     </body>
+    
+    <!-- Danmaku Feature -->
+    <script src="https://cdn.jsdelivr.net/npm/danmaku/dist/danmaku.js"></script>
+    <script>
+        //This initiate the Danmaku component
+        var danmaku = new Danmaku({
+            container: document.getElementById("dm-container"),
+            engine: "DOM",
+            speed: 144
+        });
+        //Callback function for danmaku.emit() in rtc.js
+        function createComment(text) {
+            return {
+                text,
+                style: { // styling, should be done by some controllers on interface
+                    fontSize: '25px',
+                    background: 'rgb(200, 200, 200, 0.2)',
+                    font: 'sans-serif',
+                }
+            }
+        }
+
+    </script>
 </html>
