@@ -4,7 +4,7 @@ Add Danmaku feature for research study use.
 
 Original repo https://github.com/amirsanni/Video-Call-App-NodeJS from amirsanni
 
-Danmaku engine repo https://github.com/weizhenye/Danmaku from weizhenye
+## Caution: You are looking at the danmaku-disabled branch of this application! Switch to main branch to check the normal version
 
 
 # Getting Started
@@ -22,13 +22,6 @@ Danmaku engine repo https://github.com/weizhenye/Danmaku from weizhenye
 - Expand participants' stream
 - Screen Recording
 - Video Recording
-- Danmaku Feature (New!)
-
-# Nice to have feature (todo-list)
-- On/off switch of Danmaku display (should be very easy by show/hide the danmaku container `dm-container`)
-- Danmaku Font Styling customization (now hard written in the createComment callback func.)
-- When someone sharing screen, make his screen looks bigger (First priority)
-- Customize window size of other users (tricky but doable with jQuery)
 
  
 # Deploy version
