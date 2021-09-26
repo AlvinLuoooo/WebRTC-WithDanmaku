@@ -24,6 +24,12 @@ Danmaku engine repo https://github.com/weizhenye/Danmaku from weizhenye
 - Video Recording
 - Danmaku Feature (New!)
 
+# Nice to have feature (todo-list)
+- On/off switch of Danmaku display (should be very easy by show/hide the danmaku container `dm-container`)
+- Danmaku Font Styling customization (now hard written in the createComment callback func.)
+- When someone sharing screen, make his screen looks bigger (First priority)
+- Customize window size of other users (tricky but doable with jQuery)
+
  
 # Deploy version
 Application hosted at Heroku: https://webrtc-danmaku.herokuapp.com/.
