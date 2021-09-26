@@ -7,6 +7,8 @@ Original repo https://github.com/amirsanni/Video-Call-App-NodeJS from amirsanni
 
 ## Caution: You are looking at the danmaku-disabled branch of this application! Switch to main branch to check the normal version
 
+Switch to `nodanmaku` branch for the Danmaku disabled version (Porject research purpose only)
+
 
 # Getting Started
 - Run `npm ci`
