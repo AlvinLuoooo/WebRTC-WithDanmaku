@@ -126,6 +126,8 @@
         </div>
 
 
+        <!-- Danmaku container -->
+        <div id="dm-container" style="width:100vw;height:100vh;position:fixed;z-index:1000"></div>
         
         <div class="container-fluid room-comm" hidden>
             <div class="row">
@@ -137,7 +139,7 @@
                     <div class="row mt-2 mb-2" id='videos'></div>
                 </div>
 
-                <div class="col-md-3 chat-col d-print-none mb-2 bg-info" id='chat-pane' hidden>
+                <div class="col-md-3 chat-col d-print-none mb-2 bg-info" id='chat-pane' style="z-index:1001" hidden>
                     <div class="row">
                         <div class="col-12 text-center h2 mb-3">CHAT</div>
                     </div>
@@ -151,12 +153,12 @@
             </div>
         </div>
 
-        <!-- Danmaku container -->
-        <div id="dm-container" style="width:100vw;height:100vh;position:fixed"></div>
+        
     </body>
     
     <!-- Danmaku Feature -->
     <script src="https://cdn.jsdelivr.net/npm/danmaku/dist/danmaku.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
         //This initiate the Danmaku component
         var danmaku = new Danmaku({
@@ -175,6 +177,15 @@
                 }
             }
         }
+
+        //jQuery to fix the container position
+        $(document).ready(function () {
+            let dmContHeight = window.screen.height - ($('.navbar').outerHeight(true) + 10)
+            $("#dm-container").css({
+                "margin-top": `${$('.navbar').outerHeight(true) + 10}px`,
+                "height": dmContHeight
+            })
+        })
 
     </script>
 </html>
