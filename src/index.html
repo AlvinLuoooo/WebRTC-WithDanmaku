@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Multi-User Video Call</title>
+        <title>WebRTC with Danmaku</title>
 
         <meta content="width=device-width, initial-scale=1" name="viewport" />
 
@@ -9,7 +9,6 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
         <link rel='stylesheet' href='assets/css/app.css' type="text/css">
 
-        <!-- Danmaku Feature -->
         <script src="https://cdn.jsdelivr.net/npm/danmaku/dist/danmaku.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src='/socket.io/socket.io.js'></script>
@@ -45,11 +44,11 @@
         
         
         <nav class="navbar fixed-top bg-info rounded-0 d-print-none">
-            <div class="text-white">Video Call</div>
+            <div class="text-white">Chat With Danmaku!</div>
 
             <div class="pull-right room-comm" hidden>
                 <span class="text-white mr-5">
-                    Unique Identifier: <span id='randomNumber'></span>
+                    Displayed Name: <span id='user-name'></span>
                 </span>
 
                 <button class="btn btn-sm rounded-0 btn-no-effect" id='toggle-video' title="Hide Video">
