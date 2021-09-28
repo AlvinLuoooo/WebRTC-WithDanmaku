@@ -11,6 +11,7 @@ window.addEventListener( 'load', () => {
             mainSecElem.classList.remove( 'col-md-9' );
             mainSecElem.classList.add( 'col-md-12' );
             chatElem.classList.remove( 'chat-opened' );
+            document.getElementById('dm-container').style.width = "100vw";
         }
 
         else {
@@ -18,6 +19,7 @@ window.addEventListener( 'load', () => {
             mainSecElem.classList.remove( 'col-md-12' );
             mainSecElem.classList.add( 'col-md-9' );
             chatElem.classList.add( 'chat-opened' );
+            document.getElementById('dm-container').style.width = "75vw";
         }
 
         //remove the 'New' badge on chat icon (if any) once chat is opened.
