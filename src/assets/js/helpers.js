@@ -1,3 +1,9 @@
+/**
+ * @author Amir Sanni <amirsanni@gmail.com>
+ * 
+ * Yujun Zhang <yzha725@aucklanduni.ac.nz> and group members edited this script for educational purpose
+ */
+
 export default {
     generateRandomString() {
         const crypto = window.crypto || window.msCrypto;
@@ -180,10 +186,17 @@ export default {
 
 
 
-    replaceTrack( stream, recipientPeer ) {
+    replaceTrack( stream, recipientPeer, sharingMode=false ) {
         let sender = recipientPeer.getSenders ? recipientPeer.getSenders().find( s => s.track && s.track.kind === stream.kind ) : false;
 
-        sender ? sender.replaceTrack( stream ) : '';
+        if(!sharingMode){
+            sender ? sender.replaceTrack( stream ) : '';
+        } else {
+            //placeholder
+            console.log("start sharing screen!")
+            sender ? sender.replaceTrack( stream ) : ''
+        }
+
     },
 
 
@@ -211,9 +224,20 @@ export default {
 
 
     maximiseStream( e ) {
-        let elem = e.target.parentElement.previousElementSibling;
+        let elemID = e.target.parentElement.parentElement.id; //Get the card div
+        let elemWidth = document.getElementById(elemID).style.width;
+        if (elemWidth !== "100%") {
+            let elem = document.getElementById(elemID);
+            elem.style.width = "100%";
+        } else {
+            this.adjustVideoElemSize();
+        }
+        // Following code is for full screen
+        //let elem = e.target.parentElement.previousElementSibling;
+        //elem.requestFullscreen() || elem.mozRequestFullScreen() || elem.webkitRequestFullscreen() || elem.msRequestFullscreen();
 
-        elem.requestFullscreen() || elem.mozRequestFullScreen() || elem.webkitRequestFullscreen() || elem.msRequestFullscreen();
+        // Create a container for maximise in videos div only
+
     },
 
 
