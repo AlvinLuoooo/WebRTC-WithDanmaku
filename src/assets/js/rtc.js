@@ -42,7 +42,9 @@ window.addEventListener( 'load', () => {
         socket.on( 'connect', () => {
             //set socketId
             socketId = socket.io.engine.id;
-            document.getElementById('randomNumber').innerText = randomNumber;
+
+            //set username
+            document.getElementById('user-name').innerText = username;
 
 
             socket.emit( 'subscribe', {
