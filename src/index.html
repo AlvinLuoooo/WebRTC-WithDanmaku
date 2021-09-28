@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>WebRTC with Danmaku</title>
+        <title>WebRTC Chat</title>
 
         <meta content="width=device-width, initial-scale=1" name="viewport" />
 
@@ -50,14 +50,14 @@
                 <span class="text-white mr-5">
                     Displayed Name: <span id='user-name'></span>
                 </span>
-
+<!-- 
                 <span class="text-white mr-5">
                     Show/Hide Danmaku
                     <button class="btn btn-sm rounded-0 btn-no-effect" id="toogle-danmaku" title="Show/Hide Danmaku">
                         <i class="fa fa-eye text-white"></i>
                     </button>
                 </span>
-
+ -->
                 <button class="btn btn-sm rounded-0 btn-no-effect" id='toggle-video' title="Hide Video">
                     <i class="fa fa-video text-white"></i>
                 </button>
@@ -140,7 +140,7 @@
 
         
         <!-- Danmaku container -->
-        <div id="dm-container" style="width:100vh;height:100vh;position:fixed;z-index:1001;visibility:visible;pointer-events:none;"></div>
+        <div id="dm-container" style="width:100vh;height:100vh;position:fixed;z-index:1001;visibility:hidden;pointer-events:none;"></div>
         
         <div class="container-fluid room-comm" hidden>
             <div class="row">
