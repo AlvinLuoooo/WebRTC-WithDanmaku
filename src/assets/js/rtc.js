@@ -1,6 +1,8 @@
 /**
  * @author Amir Sanni <amirsanni@gmail.com>
  * @date 6th January, 2020
+ * 
+ * Yujun Zhang <yzha725@aucklanduni.ac.nz> and group members edited this script for educational purpose
  */
 import h from './helpers.js';
 import {danmaku, createComment} from './danmaku.js';
@@ -29,7 +31,7 @@ window.addEventListener( 'load', () => {
         let socket = io( '/stream' );
 
         var socketId = '';
-        var randomNumber = `__${h.generateRandomString()}__${h.generateRandomString()}__`;
+        // var randomNumber = `__${h.generateRandomString()}__${h.generateRandomString()}__`;
         var myStream = '';
         var screen = '';
         var recordedStream = [];

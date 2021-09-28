@@ -1,11 +1,10 @@
-https://webrtc-node-chat.herokuapp.com/
 # Conference Call
 A conference call implementation using WebRTC, Socket.io and Node.js. This demo is ideal for not more than 4 devices. 
 Add Danmaku feature for research study use.
 
 Original repo https://github.com/amirsanni/Video-Call-App-NodeJS from amirsanni
 
-## Caution: You are looking at the danmaku-disabled branch of this application! Switch to main branch to check the normal version
+Danmaku engine repo https://github.com/weizhenye/Danmaku from weizhenye
 
 Switch to `nodanmaku` branch for the Danmaku disabled version (Porject research purpose only)
 
@@ -25,7 +24,15 @@ Switch to `nodanmaku` branch for the Danmaku disabled version (Porject research 
 - Expand participants' stream
 - Screen Recording
 - Video Recording
+- Danmaku Feature (New!)
+
+# Nice to have feature (todo-list)
+- On/off switch of Danmaku display (should be very easy by show/hide the danmaku container `dm-container`)
+- Danmaku Font Styling customization (now hard written in the createComment callback func.)
+- When someone sharing screen, make his screen looks bigger (First priority)
+- Customize window size of other users (tricky but doable with jQuery)
 
  
 # Deploy version
-Application hosted at Heroku: https://webrtc-node-chat.herokuapp.com/.
+Application hosted at Heroku: https://webrtc-danmaku.herokuapp.com/.
+
