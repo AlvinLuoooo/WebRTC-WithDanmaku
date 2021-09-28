@@ -377,6 +377,25 @@ window.addEventListener( 'load', () => {
             }
         } );
 
+        //When the Danmaku icon is clicked
+        document.getElementById( 'toogle-danmaku' ).addEventListener( 'click', e => {
+            e.preventDefault();
+
+            let elem = document.getElementById("dm-container");
+            if (elem.style.visibility=="visible") {
+                e.target.classList.remove("fa-eye");
+                e.target.classList.add("fa-eye-slash");
+
+                elem.style.visibility = "hidden";
+            } else {
+                e.target.classList.add("fa-eye");
+                e.target.classList.remove("fa-eye-slash");
+
+                elem.style.visibility = "visible";
+            }
+
+        })
+
 
         //When the video icon is clicked
         document.getElementById( 'toggle-video' ).addEventListener( 'click', ( e ) => {

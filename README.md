@@ -29,9 +29,9 @@ Switch to `nodanmaku` branch for the Danmaku disabled version (Porject research 
 - Danmaku Feature (New!)
 
 # Nice to have feature (todo-list)
-- On/off switch of Danmaku display (should be very easy by show/hide the danmaku container `dm-container`)
+- (Done) On/off switch of Danmaku display (should be very easy by show/hide the danmaku container `dm-container`)
 - Danmaku Font Styling customization (now hard written in the createComment callback func.)
-- When someone sharing screen, make his screen looks bigger (First priority)
+- (Done) Users could choose to maximise other's video
 - Customize window size of other users (tricky but doable with jQuery)
 
  
