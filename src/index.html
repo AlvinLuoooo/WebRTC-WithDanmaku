@@ -9,8 +9,12 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
         <link rel='stylesheet' href='assets/css/app.css' type="text/css">
 
+        <!-- Danmaku Feature -->
+        <script src="https://cdn.jsdelivr.net/npm/danmaku/dist/danmaku.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src='/socket.io/socket.io.js'></script>
         <script type="module" src='assets/js/rtc.js'></script>
+        <script type="module" src='assets/js/danmaku.js'></script>
         <script type="module" src='assets/js/events.js'></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/webrtc-adapter/7.3.0/adapter.min.js" integrity="sha256-2qQheewaqnZlXJ3RJRghVUwD/3fD9HNqxh4C+zvgmF4=" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
@@ -127,17 +131,20 @@
 
 
         
+        <!-- Danmaku container -->
+        <div id="dm-container" style="width:100vw;height:100vh;position:fixed;z-index:1001;visibility:visible;pointer-events:none;"></div>
+        
         <div class="container-fluid room-comm" hidden>
             <div class="row">
-                <video class="local-video mirror-mode" id='local' volume='0' autoplay muted></video>
+                <video class="local-video mirror-mode" id='local' volume='0' style='z-index:1002' autoplay muted></video>
             </div>
             
             <div class="row">
-                <div class="col-md-12 main" id='main-section'>                    
+                <div class="col-md-12 main" id='main-section' style="height: 20vh; height: 20vh;">                    
                     <div class="row mt-2 mb-2" id='videos'></div>
                 </div>
 
-                <div class="col-md-3 chat-col d-print-none mb-2 bg-info" id='chat-pane' hidden>
+                <div class="col-md-3 chat-col d-print-none mb-2 bg-info" id='chat-pane' style="z-index:1002" hidden>
                     <div class="row">
                         <div class="col-12 text-center h2 mb-3">CHAT</div>
                     </div>
@@ -151,30 +158,12 @@
             </div>
         </div>
 
+<<<<<<< HEAD
         <!-- Danmaku container -->
         <div id="dm-container" style="width:100vw;height:100vh;position:fixed;visibility: hidden"></div>
+=======
+        
+>>>>>>> main
     </body>
-    
-    <!-- Danmaku Feature -->
-    <script src="https://cdn.jsdelivr.net/npm/danmaku/dist/danmaku.js"></script>
-    <script>
-        //This initiate the Danmaku component
-        var danmaku = new Danmaku({
-            container: document.getElementById("dm-container"),
-            engine: "DOM",
-            speed: 144
-        });
-        //Callback function for danmaku.emit() in rtc.js
-        function createComment(text) {
-            return {
-                text,
-                style: { // styling, should be done by some controllers on interface
-                    fontSize: '25px',
-                    background: 'rgb(200, 200, 200, 0.2)',
-                    font: 'sans-serif',
-                }
-            }
-        }
 
-    </script>
 </html>
