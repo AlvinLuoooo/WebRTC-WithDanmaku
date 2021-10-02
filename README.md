@@ -1,3 +1,6 @@
+# Caution: You are looking at the non-danmaku version!
+For the research and experiment convenience, the non-Danmaku version of this app is hosted at: https://webrtc-node-chat.herokuapp.com/
+
 # WebRTC Video Call With Danmaku
 
 This is a light-weight and simple web video call server-side application based on *WebRTC, NodeJS* and *Socket.io*. For the research purpose on improvement of user interaction and usability perspective, we add a chat-focus improvement function called Danmaku. Using this software and the accompanying non-Danmaku version of the software, the experimenter was able to complete a series of experimental questions on whether the Danmaku feature was effective in enhancing the user experience of text chat in Zoom-like software.
