@@ -78,12 +78,10 @@ If you would like to hide this feature as hard-written in code, there is a simpl
 - Change the `visibility` in style property to `visibility=hidden` (This hide the danmaku container)
 - Remove the whole element `<button id="toogle-danmaku">` (This remove the on/off switch of danmaku)
 
-# Open-Source resources used in this project (GitHub Repo)
+# Major Open-Source resources used in this project (GitHub Repo)
 NodeJS WebRTC Video Call https://github.com/amirsanni/Video-Call-App-NodeJS from amirsanni
 
 Danmaku Engine https://github.com/weizhenye/Danmaku from weizhenye
-
-AutoLink Tool https://github.com/bryanwoods/autolink-js from bryanwoods
 
 # Disclaimer
 This project, and above referred Open-Source resources are licensed under MIT license.
