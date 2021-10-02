@@ -26,7 +26,11 @@ The usage of Danmaku in online video and livestream platforms (e.g. *Niconico.co
 # Setup with remote environment
 We use Heroku to host our web application. https://www.heroku.com/
 
-If you would like to setup this application in a remote environment, we recommend to use Heroku with Automated Certificate Management (ACM) enabled (service charges may apply). This is the simplest way to make sure you could run this application in the valid HTTPS connection.
+If you would like to setup this application in a remote environment, we recommend to use Heroku with Automated Certificate Management (ACM) enabled (service charges may apply). This is the simplest way to make sure you could run this application in the valid HTTPS connection. 
+
+Make sure your deployed execution script is using `npm start`.
+
+In `App.js`, the default port setting is `port = process.env.PORT || 3000;`. This means if your deploying execution command passed in a port environment parameter, Node will accept it as the assigned running port; or it would run on port `3000` by default. Make sure your domain's port forwarding is set correctly.
 
 If you are using other web application hosting services or you would like to setup your own server, please make sure you have a valid SSL certificate applied to your domain. This is due to the *Chromium getusermedia API* that used by *WebRTC* requires secure origins. In HTTP connection you can *only* test with localhost and for deployment you would need HTTPS[^2].
 
