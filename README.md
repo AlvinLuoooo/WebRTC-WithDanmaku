@@ -11,29 +11,6 @@ Danmaku (Japanese: 弾幕, Chinese: 弹幕), literally translated as “bullet c
 
 The usage of Danmaku in online video and livestream platforms (e.g. *Niconico.com* and *Bilibili.com*) significantly improved the interaction experience between peer audiences. We assume this could bring a change to the current situation of Zoom-like software and applications as well, due to the lack of visibility and interactivity of traditional text chat feature.
 
-
-# Getting Started locally
-- Before running, check your NodeJS and NPM is installed by execute 
-- `node -v`
-- `npm -v`
-- If you haven't install them on your computer, follow https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
-- After installation, in the project directory root:
-- Run `npm ci`
-- `npm start` or `npm run watch`(*nodemon*)
-- Go to http://localhost:3000
-- Done!
-
-# Setup with remote environment
-We use Heroku to host our web application. https://www.heroku.com/
-
-If you would like to setup this application in a remote environment, we recommend to use Heroku with Automated Certificate Management (ACM) enabled (service charges may apply). This is the simplest way to make sure you could run this application in the valid HTTPS connection. 
-
-Make sure your deployed execution script is using `npm start`.
-
-In `App.js`, the default port setting is `port = process.env.PORT || 3000;`. This means if your deploying execution command passed in a port environment parameter, Node will accept it as the assigned running port; or it would run on port `3000` by default. Make sure your domain's port forwarding is set correctly.
-
-If you are using other web application hosting services or you would like to setup your own server, please make sure you have a valid SSL certificate applied to your domain. This is due to the *Chromium getusermedia API* that used by *WebRTC* requires secure origins. In HTTP connection you can *only* test with localhost and for deployment you would need HTTPS[^2].
-
 # Technical Stack
 - HTML+JavaScript+CSS 
 - Bootstrap (Styling and UI Elements)
@@ -59,9 +36,32 @@ If you are using other web application hosting services or you would like to set
 # Planned Features (todo-list)
 - Danmaku Font Styling customization (now hard written in the createComment callback func.)
 - Customize window size of other users
+
+
+# Getting Started locally
+- Before running, check your NodeJS and NPM is installed by execute 
+- `node -v`
+- `npm -v`
+- If you haven't install them on your computer, follow https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
+- After installation, in the project directory root:
+- Run `npm ci`
+- `npm start` or `npm run watch`(*nodemon*)
+- Go to http://localhost:3000
+- Done!
+
+# Setup with remote environment
+We use Heroku to host our web application. https://www.heroku.com/
+
+If you would like to setup this application in a remote environment, we recommend to use Heroku with Automated Certificate Management (ACM) enabled (service charges may apply). This is the simplest way to make sure you could run this application in the valid HTTPS connection. 
+
+Make sure your deployed execution script is using `npm start`.
+
+In `App.js`, the default port setting is `port = process.env.PORT || 3000;`. This means if your deploying execution command passed in a port environment parameter, Node will accept it as the assigned running port; or it would run on port `3000` by default. Make sure your domain's port forwarding is set correctly.
+
+If you are using other web application hosting services or you would like to setup your own server, please make sure you have a valid SSL certificate applied to your domain. This is due to the *Chromium getusermedia API* that used by *WebRTC* requires secure origins. In HTTP connection you can *only* test with localhost and for deployment you would need HTTPS[^2].
  
 # Deployed Application
-Application hosted at Heroku: https://webrtc-danmaku.herokuapp.com/.
+You don't need to complie or install in order to use this application. It is hosted at Heroku: https://webrtc-danmaku.herokuapp.com/. (Managed By Yujun Zhang)
 
 You could use this hosted application for any research purpose. Please follow the instruction provided in the project. 
 
