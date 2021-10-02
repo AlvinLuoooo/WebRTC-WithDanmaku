@@ -1,7 +1,3 @@
-/**
- * @author  Yujun Zhang <yzha725@aucklanduni.ac.nz>
- */
-
 //This initiate the Danmaku component
 export var danmaku = new Danmaku({
     container: document.getElementById("dm-container"),

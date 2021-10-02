@@ -1,9 +1,3 @@
-/**
- * @author Amir Sanni <amirsanni@gmail.com>
- * 
- * Yujun Zhang <yzha725@aucklanduni.ac.nz> and group members edited this script for educational purpose
- */
-
 export default {
     generateRandomString() {
         const crypto = window.crypto || window.msCrypto;
